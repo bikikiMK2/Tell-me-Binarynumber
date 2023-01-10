@@ -3,30 +3,37 @@ import java.util.List;
 
 public class Main{
     public static void main(String[] args){
-        System.out.println("16進数を入力してください");
+
+        System.out.println("10進数を入力してください");
         int number = new java.util.Scanner(System.in).nextInt();
 
         if(number < 1){
             System.out.println(number);
         }
-        else{
-            int number2 = (0);
-            // 割ったあまり
+        else
+        {
+            int number2;
+            // あまりを入れておく変数
+            int number3 = 0;
+            //numberを2で割ったときの数値
 
-            List<Integer> Binarynumbers = new ArrayList<>();
+            List<Integer> LIST = new ArrayList<>();
 
-            while(number2 < 1){
+            while(number3 == 0){
 
                 number2 = number % 2;
-                int number3 = number - 2;
+                //numberを2で割ったときのあまり
+                LIST.add(number2);
+                number3 = number - number2;
+                number = number3;
 
                 if(number3 < 1){
-                    Binarynumbers.add(number3);
+                    LIST.add(number3);
                 }
 
             }
-        }System.out.println();
+        }
+        System.out.println();
          //BinarynumbersListをconsoleに出力
-
     }
 }
