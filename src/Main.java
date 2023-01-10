@@ -14,19 +14,20 @@ public class Main{
 
         List<Integer> LIST = new ArrayList<>();
 
-        while (number < 1) {
+        while (number > 1) {
 
             number2 = number % 2;
             //numberを2で割ったときのあまり
-            LIST.add(number2);
+             LIST.add(number2);
             number3 = number - number2;
             number = number3;
 
-            if (number3 < 1) {
+            if (number*2 < 1) {
                 LIST.add(number3);
             }
 
         }
+        System.out.println(LIST);
         //BinarynumbersListをconsoleに出力
       }
     }
