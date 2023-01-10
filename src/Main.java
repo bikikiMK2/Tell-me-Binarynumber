@@ -25,6 +25,9 @@ public class Main{
             if (number*2 < 1) {
                 LIST.add(number3);
             }
+            else if(number3*2 < 1){
+                break;
+            }
 
         }
         System.out.println(LIST);
