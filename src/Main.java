@@ -8,14 +8,21 @@ public class Main{
         int number = new java.util.Scanner(System.in).nextInt();
 
         List<Integer> LIST = new ArrayList<>();
-        switch (number) {
-            case 0, 1 -> LIST.add(number);
+        if(number==1||number==0){
+            LIST.add(number);
         }
-        while(number>2){
-            LIST.add(number % 2);
-            
-        }
+        else{
+            while(number - (number%2) != 1){
+                LIST.add(number%2);
+                 number = number - (number%2);
 
-        System.out.println(LIST);
+                if(number == 1){
+                    LIST.add(number);
+                    number = 0;
+                }
+
+            }
+        }
+        System.out.println((LIST)+"2");
     }
 }
