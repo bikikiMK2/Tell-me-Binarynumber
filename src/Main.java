@@ -44,8 +44,6 @@ public class Main{
                 }
             }
         }
-
-        if(number == 2){LIST.add((1),(0));}
         if(number == 1) {LIST.add(number);}
         System.out.println((LIST)+"2");
     }
