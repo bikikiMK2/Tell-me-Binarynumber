@@ -11,7 +11,10 @@ public class Main{
 
         if(number == 1||number == 0){LIST.add(number);}
         else{
-            while(number - (number%2) != 1){//numberが2になるまで
+
+            //ここに後でif文を入れる
+
+            while(number - (number%2) != 1){
 
                 if((number - (number%2)) % 2 == 0){//もしnumberが奇数なら
                         LIST.add(number%2);
@@ -41,6 +44,9 @@ public class Main{
                 }
             }
         }
-        if (number == 1) {LIST.add(number);} System.out.println((LIST)+"2");
+
+        if(number == 2){LIST.add((1),(0));}
+        if(number == 1) {LIST.add(number);}
+        System.out.println((LIST)+"2");
     }
 }
