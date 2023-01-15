@@ -8,6 +8,7 @@ public class Main{
         int number = new java.util.Scanner(System.in).nextInt();
 
         List<Integer> LIST = new ArrayList<>();
+
         if(number == 1||number == 0){LIST.add(number);}
         else{
             while(number - (number%2) != 1){//numberが2になるまで
@@ -24,6 +25,10 @@ public class Main{
                             number = number/2;//奇数を代入
                             number = (number - (number%2));
                         }
+                        if((number - (number%2)) % 2 == 0){//もしnumberが奇数なら
+                            LIST.add(number%2);
+                            number = (number - number%2);
+                        }//奇数の処理
                         number = number/2;
                         LIST.add(number%2);
                         number = (number - (number%2));
