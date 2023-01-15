@@ -33,7 +33,7 @@ public class Main{
                         LIST.add(number);
                         break;
                     }
-                }//偶数を奇数になるまで2で余りを出す
+                }
             }
         }
         if (number == 1) {LIST.add(number);} System.out.println((LIST)+"2");
