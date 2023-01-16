@@ -18,8 +18,8 @@ public class Main{
                         number = (number - number / 2);
                     }
 
-                        LIST.add(number % 2);
-                        number = (number - number % 2);
+                    LIST.add(number % 2);
+                    number = (number - number % 2);
 
             }
 
